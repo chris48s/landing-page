@@ -1,0 +1,29 @@
+name: Test
+on: [push, pull_request]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+
+      - name: Install Node JS 26
+        uses: actions/setup-node@v7
+        with:
+          node-version: 26
+      - name: Show Node/NPM versions
+        run: |
+          node --version
+          npm --version
+
+      - name: Install
+        run: npm ci
+
+      - name: Test
+        run: |
+          npm run validate
+          npm run spellcheck
+
+      - name: Build
+        run: ./build.sh

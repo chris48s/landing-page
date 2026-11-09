@@ -1,0 +1,18 @@
+{
+  "name": "chris-shaw.dev",
+  "version": "0.0.0",
+  "private": true,
+  "author": "chris48s",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.7.2",
+    "bulma": "^1.0.4"
+  },
+  "scripts": {
+    "validate": "html-validator index.html",
+    "spellcheck": "cspell index.html"
+  },
+  "devDependencies": {
+    "cspell": "^9.2.1",
+    "w3c-html-validator": "^1.9.1"
+  }
+}
