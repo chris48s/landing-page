@@ -13,6 +13,6 @@
   },
   "devDependencies": {
     "cspell": "^9.2.1",
-    "w3c-html-validator": "^1.9.1"
+    "w3c-html-validator": "^2.2.3"
   }
 }
