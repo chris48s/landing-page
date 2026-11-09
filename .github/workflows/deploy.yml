@@ -1,0 +1,37 @@
+name: Build and Deploy
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+
+      - name: Install Node JS 26
+        uses: actions/setup-node@v7
+        with:
+          node-version: 26
+      - name: Show Node/NPM versions
+        run: |
+          node --version
+          npm --version
+
+      - name: Install
+        run: npm ci --omit dev
+
+      - name: Build
+        run: ./build.sh
+
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages
+          folder: build
+          clean: true

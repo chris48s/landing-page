@@ -1,38 +1,117 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <title>Chris Shaw</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="node_modules/bulma/css/bulma.min.css">
+  <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
+  <style>
+    .header-link {
+      white-space: nowrap;
+      padding-left: .5em;
+      padding-right: .5em;
+    }
 
-  <link rel="icon" href="favicon.ico" type="image/png" />
+    .icon-text {
+      flex-wrap: nowrap;
+    }
 
-  <link href="https://fonts.googleapis.com/css?family=Reem+Kufi|Roboto:300" rel="stylesheet">
-  <link href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="css/grey-white.css">
+    .icon {
+      margin-right: .5em;
+    }
+  </style>
 </head>
+
 <body>
-  <main>
-    <div class="intro">Hi, I'm Chris</div>
-    <div class="tagline1">Full-stack developer</div>
-    <div class="tagline2">Web Applications • APIs • Open Source • Open Data • GIS</div>
-    <div class="icons-social">
-      <a target="_blank" href="https://github.com/chris48s"><i class="fab fa-github"></i><br />GitHub</a>
-      <a target="_blank" href="https://pypi.org/user/chris48s/"><i class="fab fa-python"></i><br />PyPI</a>
-      <a target="_blank" href="https://www.npmjs.com/~chris48s"><i class="fab fa-npm"></i><br />NPM</a>
-      <a target="_blank" href="https://packagist.org/packages/chris48s/"><i class="fab fa-php"></i><br />Packagist</a>
-      <a target="_blank" href="https://fed.chris-shaw.dev/@chris"><i class="fab fa-mastodon"></i><br />Mastodon</a>
-      <a target="_blank" href="https://keybase.io/chris48s"><i class="fab fa-keybase"></i><br />Keybase</a>
-      <a target="_blank"
-        href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#104;&#101;&#108;&#108;&#111;&#64;&#99;&#104;&#114;&#105;&#115;&#45;&#115;&#104;&#97;&#119;&#46;&#100;&#101;&#118;">
-        <i class="fa fa-at"></i><br />Email
-      </a>
-      <a target="_blank" href="https://chris48s.github.io/blogmarks"><i class="fa fa-book-open"></i><br />Blog</a>
+
+  <section class="hero is-primary">
+    <div class="hero-body">
+      <div class="container">
+        <div class="level">
+          <div class="level-item has-text-centered">
+            <figure class="image is-128x128">
+              <img class="is-rounded" src="img/me-big.jpg" alt="">
+            </figure>
+          </div>
+        </div>
+        <div class="columns has-text-centered">
+          <div class="column">
+            <h1 class="title is-1">
+              Chris Shaw
+            </h1>
+            <h2 class="subtitle">
+              Software Developer • Swansea, UK
+            </h2>
+
+
+          </div>
+        </div>
+      </div>
     </div>
-  </main>
+  </section>
+
+  <section class="section">
+    <div class="container">
+
+      <h2 class="title">About Me</h2>
+      <hr>
+
+      <p class="block">
+        Hi 👋 I'm Chris. I have over 20 years of professional experience building software.
+      </p>
+      <p class="block">
+        I'm currently Lead Developer at <a target="_blank" href="https://democracyclub.org.uk/">Democracy Club</a>.
+        Our election data is trusted by organisations like the BBC, The Electoral Commission, and GOV.UK.
+        Our websites and APIs serve millions of users in the period leading up to a major election.
+        I ensure our services perform and scale when it matters.
+      </p>
+    </div>
+  </section>
+
+  <div class="section">
+    <div class="content has-text-centered">
+      <p>
+        <a target="_blank" href="https://github.com/chris48s" class="has-text-black header-link">
+          <i class="fab fa-github"></i>&nbsp;GitHub
+        </a>
+        |
+        <a target="_blank" href="https://pypi.org/user/chris48s/" class="has-text-black header-link">
+          <i class="fab fa-python"></i>&nbsp;PyPI
+        </a>
+        |
+        <a target="_blank" href="https://www.npmjs.com/~chris48s" class="has-text-black header-link">
+          <i class="fab fa-npm"></i>&nbsp;NPM
+        </a>
+        |
+        <a target="_blank" href="https://packagist.org/packages/chris48s/" class="has-text-black header-link">
+          <i class="fab fa-php"></i>&nbsp;Packagist
+        </a>
+        |
+        <a target="_blank" href="https://fed.chris-shaw.dev/@chris" class="has-text-black header-link">
+          <i class="fab fa-mastodon"></i> Mastodon
+        </a>
+        |
+        <a target="_blank" href="https://chris48s.github.io/blogmarks" class="has-text-black header-link">
+          <i class="fa fa-book-open"></i>&nbsp;Blog
+        </a>
+        |
+        <a target="_blank"
+          href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#104;&#101;&#108;&#108;&#111;&#64;&#99;&#104;&#114;&#105;&#115;&#45;&#115;&#104;&#97;&#119;&#46;&#100;&#101;&#118;"
+          class="has-text-black header-link"
+        >
+          <i class="fa fa-at"></i>&nbsp;Email
+        </a>
+        |
+        <a target="_blank" href="https://www.linkedin.com/in/chris-shaw-113a12b7/" class="has-text-black header-link">
+          <i class="fab fa-linkedin"></i>&nbsp;Linkedin
+        </a>
+      </p>
+    </div>
+  </div>
+
 </body>
+
 </html>
