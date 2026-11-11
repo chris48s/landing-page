@@ -8,11 +8,11 @@
     "bulma": "^1.0.4"
   },
   "scripts": {
-    "validate": "html-validator index.html",
+    "validate": "html-validate index.html",
     "spellcheck": "cspell index.html"
   },
   "devDependencies": {
     "cspell": "^9.2.1",
-    "w3c-html-validator": "^1.9.1"
+    "html-validate": "^11.21.0"
   }
 }
