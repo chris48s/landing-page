@@ -12,7 +12,7 @@
     "spellcheck": "cspell index.html"
   },
   "devDependencies": {
-    "cspell": "^9.2.1",
+    "cspell": "^10.4.1",
     "html-validate": "^11.21.0"
   }
 }
